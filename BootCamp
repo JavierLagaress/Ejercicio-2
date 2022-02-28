@@ -1,0 +1,82 @@
+<!--Crea un formulario en el que haya que introducir los siguientes datos: Nombre, Apellido, e-mail, teléfono y dirección.
+ 
+Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 columnas y 4 filas, en esta tabla deberás hacer que:
+ 
+Una de las celdas ocupe dos columnas.
+ 
+Una de las celdas ocupe dos filas.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <h1>Completa el Formulario</h1>
+
+    <div>
+        <fieldset>
+            <legend>Información personal</legend>
+
+        <input type="text" id="nombre" name="nombre" required  pattern="[A-Za-z0-9]+" placeholder="Escribe aquí tu Nombre" />
+        <p></p>
+        <input type="text" id="Apellido" name="Apellido" required  pattern="[A-Za-z0-9]+" placeholder="Escribe aquí tu Apellido" />
+        <p></p>
+        <input type="email" id="email" name="email" required  placeholder="Escribe aquí tu e-mail" />
+        <p></p>
+        <input type="tel" id="tel" name="tel" required placeholder="Escribe aquí tu Teléfono" />
+        <p></p>
+        <input type="text" id="dirección" name="dirección" required placeholder="Escribe aquí tu Dirección" />
+
+        </fieldset>
+
+    </div>
+
+    <p></p>
+
+    <table border="1">
+
+        <caption>
+            Tabla de Prueba
+          </caption>
+
+        <thead>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <th>Columna 4</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Celda 1</td>
+            <td colspan="2">Celda 2 y 3</td>
+            <td>Celda 4</td>
+          </tr>
+
+          <tr>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+          </tr>
+          
+        </tbody>
+
+        <tfoot>
+            <tr>
+              <td>Pie de tabla 1</td>
+              <td>Pie de tabla 2</td>
+              <td>Pie de tabla 3</td>
+              <td>Pie de tabla 4</td>
+            </tr>
+          </tfoot>
+        
+      </table>
+
+</body>
+</html>
